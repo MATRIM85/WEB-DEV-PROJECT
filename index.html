@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <style>
+        * {
+            margin: 0;
+            color: white;
+        }
+
+        header {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            position: fixed;
+            z-index: 2;
+
+        }
+
+        footer {
+            height: 4vh;
+            width: 100vw;
+            background-color: purple;
+            text-align: center;
+        }
+
+        header:hover {
+            background-color: cornflowerblue;
+            color: aqua;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 60px;
+            width: 100vw;
+        }
+
+        #navigation-span {
+            width: fit-content;
+            padding: 20px 10px;
+            color: white;
+        }
+
+        #nav-ul {
+            width: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+
+        #nav-li {
+            display: inline;
+            padding: 20px 10px;
+            color: aliceblue;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: purple;
+            height: 141vh;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box1 {
+            height: 40vh;
+            width: 100vw;
+            background-color: white;
+            padding: 50px 0;
+            background: url(images/box1background.avif);
+
+        }
+
+        .box2 {
+            height: 40vh;
+            width: 100vw;
+            background-color: white;
+            background: url(images/box2background.avif);
+        }
+
+        .box3 {
+            background: url(images/box1background.avif);
+            width: 100vw;
+            height: 40vh;
+        }
+
+        #name:hover {
+            color: rgb(38, 232, 20);
+        }
+
+        .introduction {
+            font-size: larger;
+        }
+
+        .profile-photo {
+            position: absolute;
+            top: 64px;
+            right: 10px;
+
+        }
+
+        #profile-photo {
+            border: 2px solid white;
+            border-radius: 68px;
+        }
+
+        #achievements {
+            padding: 0 0 0 10px;
+        }
+
+        .achievements-li {
+            font-size: larger;
+        }
+
+        #contact-me {
+            padding: 0 0 0 10px;
+        }
+
+        #email {
+            display: inline;
+            padding: 0 10px 0 0;
+        }
+
+        #linkedin {
+            display: inline;
+            padding: 0 10px 0 0;
+        }
+
+        #linkedin-link:hover {
+            color: aqua;
+        }
+
+        #email-link:hover {
+            color: aqua;
+        }
+
+        footer:hover {
+            background-color: #b77373;
+            color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#main" id="navigation-span">PORTFOLIO</a>
+            <ul id="nav-ul">
+                <li id="nav-li"><a href="#main">HOME</a></li>
+                <li id="nav-li"><a href="#achievements">MY ACHEIVEMENTS</a></li>
+                <li id="nav-li"><a href="#contact-me">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <main>
+        <div class="container" id="main">
+            <div class="box1">
+                <p id="BIODATA">
+
+                <h1>Hello, I'm <u id="name">KRISH THAKUR</u> .</h1>
+                <br>
+                <p class="introduction">I am a student at <u><a href="https://www.scaler.com/" id="name">SCALER SCHOOL
+                            OF TECHNOLOGY</a></u>. I am a Alumnus of <a href="https://www.sainikschoolsujanpurtira.org/"
+                        target="_blank" id="name">SAINIK SCHOOL SUJANPUR TIRA</a> (H.P.) .
+                </p>
+                </p>
+                <br>
+                <caption> I :</caption>
+                <ul type="circle">
+                    <li>AM A BEGINNER IN CODING AND PROGRAMMING.</li>
+                    <li>AM LEARNING JAVA,HTML,CSS,LINUX,</li>
+                    <li>ASPIRE TO BECOME A BACKEND DEVELOPER</li>
+                    <li>LIKE TO TRY NEW THINGS.</li>
+                    <li>AM AN AVID NOVEL READER.</li>
+                    <li>HAVE GOOD GRASP ON MATHEMATICS.</li>
+                </ul>
+            </div>
+            <div class="box2">
+                <br>
+                <h2 id="achievements">MY ACHEIVEMENTS</h2>
+                <br>
+
+                <br>
+                <ul id="achievements-ul">
+                    <li id="achievements-li">was twice part of school hockey during my time in <a id="name"
+                            href="https://www.sainikschoolsujanpurtira.org/">SSST</a></li>
+                    <li id="achievements-li">won <u>GOLD</u> in ZONALS & <u>BRONZE</u> in INTER-ZONALS.</li>
+                    <li id="achievements-li">scored 90% in class 10th.</li>
+                    <li id="achievements-li">My house was overall best house of our school during my time there.</li>
+                    <caption>It's been only two months in Scaler , So my acheivements are of my previous school.
+                    </caption>
+                </ul>
+            </div>
+            <div class="profile-photo">
+                <img id="profile-photo" src="images/profile photo.jpg" alt="profile photo" width="200px" height="200px">
+            </div>
+            <div class="box3">
+                <br>
+                <h2 id="contact-me">CONTACT ME</h2>
+                <br>
+                <h4 id="email">E-MAIL:krishthakur544@gmail.com</h4>
+                <a href="mailto:krishthakur544@gmail.com" id="email-link">MAIL HERE</a>
+                <br>
+                <br>
+                <h4 id="linkedin">Linkedin: KRISH THAKUR</h4>
+                <a href="https://www.linkedin.com/in/krish-thakur-320643409?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                    id="linkedin-link">LET'S INCREASE NETWORK</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <b>&copy; 2026 KT. All Rights Reserved.</b>
+    </footer>
+</body>
+
+</html>
